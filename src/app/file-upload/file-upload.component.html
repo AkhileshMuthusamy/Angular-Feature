@@ -1,0 +1,6 @@
+<p>file-upload works!</p>
+<input class="hideInput" type="file" (change)="onFileChanged($event)" #fileInput>
+<button class="btn btn-primary" (click)="fileInput.click()">
+  Select File
+</button>
+<button class="btn btn-dark" type="button" (click)="onUpload()" >Upload!</button>
