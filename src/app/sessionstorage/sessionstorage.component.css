@@ -1,0 +1,4 @@
+/* ng-deep is used to override the default material color */
+::ng-deep .tooltipColor {
+  background: #b71c1c;
+}

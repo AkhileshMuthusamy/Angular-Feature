@@ -1,0 +1,20 @@
+<p>sessionstorage works!</p>
+<button mat-icon-button (click)="addValueToSessionStrg()">
+  <mat-icon aria-label="label">add</mat-icon>
+</button>
+
+<button mat-icon-button (click)="deleteValueFromSessionStrg()">
+  <mat-icon aria-label="label">delete</mat-icon>
+</button>
+
+<button mat-icon-button
+        matTooltip="Clear Storage Session"
+        matTooltipClass="tooltipColor"
+        matTooltipPosition="after"
+        matTooltipShowDelay="1000"
+        matTooltipHideDelay="2000"
+        (click)="clearSessionStrg()">
+  <mat-icon>clear</mat-icon>
+</button>
+
+<p>Username: {{ userName }}</p>
