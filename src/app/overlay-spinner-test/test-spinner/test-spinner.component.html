@@ -1,0 +1,17 @@
+
+<div class="wrapper" >
+  <!-- Overlay Spinner -->
+  <div class="overlay" *ngIf="showSpinner">
+    <div class="spinner-wrapper">
+        <app-spinner-overlay *ngIf="showSpinner"></app-spinner-overlay>
+    </div>
+  </div>
+
+  <div [class.blurred]="showSpinner">
+    <!-- Actual content of the component goes here -->
+      <h3>Test spinner component</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus repudiandae illo nisi adipisci iste provident sunt totam cumque similique officia nesciunt doloremque praesentium ipsam, a quaerat beatae numquam dolores id neque ex soluta! Consequatur consectetur explicabo perspiciatis commodi autem cupiditate corrupti veritatis ipsum quasi laborum!</p>
+      <button (click)="loadSpinner()">Load Spinner</button>
+  </div>
+
+</div>
