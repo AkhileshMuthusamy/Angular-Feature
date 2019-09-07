@@ -11,13 +11,21 @@ import { MaterialModule } from './shared/modules/material.module';
 import { SpinnerOverlayComponent } from './shared/component/spinner-overlay/spinner-overlay.component';
 import { OverlaySpinnerTestComponent } from './overlay-spinner-test/overlay-spinner-test.component';
 import { TestSpinnerComponent } from './overlay-spinner-test/test-spinner/test-spinner.component';
+import { HtmlToJspdfComponent } from './html-to-jspdf/html-to-jspdf.component';
+import { GeneratePdfComponent } from './generate-pdf/generate-pdf.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
-  declarations: [AppComponent, FileUploadComponent, SessionstorageComponent,
+  declarations: [
+    AppComponent,
+    FileUploadComponent,
+    SessionstorageComponent,
     SpinnerOverlayComponent,
     OverlaySpinnerTestComponent,
-    TestSpinnerComponent],
+    TestSpinnerComponent,
+    HtmlToJspdfComponent,
+    GeneratePdfComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent]
