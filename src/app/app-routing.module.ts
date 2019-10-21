@@ -5,13 +5,15 @@ import { SessionstorageComponent } from './sessionstorage/sessionstorage.compone
 import { OverlaySpinnerTestComponent } from './overlay-spinner-test/overlay-spinner-test.component';
 import { HtmlToJspdfComponent } from './html-to-jspdf/html-to-jspdf.component';
 import { GeneratePdfComponent } from './generate-pdf/generate-pdf.component';
+import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
 
 const routes: Routes = [
   { path: 'fileupload', component: FileUploadComponent },
   { path: 'sessionstrg', component: SessionstorageComponent },
   { path: 'overlay-spinner', component: OverlaySpinnerTestComponent },
   { path: 'htmltojspdf', component: HtmlToJspdfComponent },
-  { path: 'generate-pdf', component: GeneratePdfComponent }
+  { path: 'generate-pdf', component: GeneratePdfComponent },
+  { path: 'flex-layout', component: FlexlayoutComponent }
 ];
 
 @NgModule({

@@ -15,6 +15,7 @@ import { TestSpinnerComponent } from './overlay-spinner-test/test-spinner/test-s
 import { HtmlToJspdfComponent } from './html-to-jspdf/html-to-jspdf.component';
 import { GeneratePdfComponent } from './generate-pdf/generate-pdf.component';
 import { FlexHideComponent } from './flexLayout/flex-hide/flex-hide.component';
+import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FlexHideComponent } from './flexLayout/flex-hide/flex-hide.component';
     TestSpinnerComponent,
     HtmlToJspdfComponent,
     GeneratePdfComponent,
-    FlexHideComponent
+    FlexHideComponent,
+    FlexlayoutComponent
   ],
   imports: [
     BrowserModule,

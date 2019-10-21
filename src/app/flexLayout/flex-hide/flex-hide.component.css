@@ -1,0 +1,22 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-icon {
+  padding: 0 14px 0 14px;
+}
+
+.toolbar-icon-with-badge {
+  padding: 0 0 0 14px;
+}
+
+.header-logo {
+  transition: all 0.3s ease;
+  /* position: relative; */
+  margin: 15px 15px 15px 15px;
+  /* top: 0; */
+}
+
+.dark-bg {
+  background-color: aquamarine;
+}
