@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { SessionstorageComponent } from './sessionstorage/sessionstorage.component';
@@ -6,6 +6,7 @@ import { OverlaySpinnerTestComponent } from './overlay-spinner-test/overlay-spin
 import { HtmlToJspdfComponent } from './html-to-jspdf/html-to-jspdf.component';
 import { GeneratePdfComponent } from './generate-pdf/generate-pdf.component';
 import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
+import { FormHandlingComponent } from './form-handling/form-handling.component';
 
 const routes: Routes = [
   { path: 'fileupload', component: FileUploadComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'overlay-spinner', component: OverlaySpinnerTestComponent },
   { path: 'htmltojspdf', component: HtmlToJspdfComponent },
   { path: 'generate-pdf', component: GeneratePdfComponent },
-  { path: 'flex-layout', component: FlexlayoutComponent }
+  { path: 'flex-layout', component: FlexlayoutComponent },
+  { path: 'form-handling', component: FormHandlingComponent }
 ];
 
 @NgModule({
