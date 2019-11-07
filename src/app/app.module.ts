@@ -17,6 +17,7 @@ import { GeneratePdfComponent } from './generate-pdf/generate-pdf.component';
 import { FlexHideComponent } from './flexLayout/flex-hide/flex-hide.component';
 import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
 import { FormHandlingComponent } from './form-handling/form-handling.component';
+import { HomeComponent } from './home/home.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FormHandlingComponent } from './form-handling/form-handling.component';
     GeneratePdfComponent,
     FlexHideComponent,
     FlexlayoutComponent,
-    FormHandlingComponent
+    FormHandlingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
