@@ -18,6 +18,7 @@ import { FlexHideComponent } from './flexLayout/flex-hide/flex-hide.component';
 import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
 import { FormHandlingComponent } from './form-handling/form-handling.component';
 import { HomeComponent } from './home/home.component';
+import { ResolveComponent } from './resolve/resolve.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -33,7 +34,8 @@ import { HomeComponent } from './home/home.component';
     FlexHideComponent,
     FlexlayoutComponent,
     FormHandlingComponent,
-    HomeComponent
+    HomeComponent,
+    ResolveComponent
   ],
   imports: [
     BrowserModule,

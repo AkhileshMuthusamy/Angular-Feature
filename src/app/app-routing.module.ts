@@ -8,9 +8,12 @@ import { GeneratePdfComponent } from './generate-pdf/generate-pdf.component';
 import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
 import { FormHandlingComponent } from './form-handling/form-handling.component';
 import { HomeComponent } from './home/home.component';
+import { HnResolver } from './resolve/hn.resolver';
+import { ResolveComponent } from './resolve/resolve.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'resolve', component: ResolveComponent, resolve: { message: HnResolver } },
   { path: 'fileupload', component: FileUploadComponent },
   { path: 'sessionstrg', component: SessionstorageComponent },
   { path: 'overlay-spinner', component: OverlaySpinnerTestComponent },
@@ -22,6 +25,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [HnResolver]
 })
 export class AppRoutingModule {}
