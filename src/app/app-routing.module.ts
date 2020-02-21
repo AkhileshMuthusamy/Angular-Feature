@@ -12,6 +12,8 @@ import { HnResolver } from './resolve/hn.resolver';
 import { ResolveComponent } from './resolve/resolve.component';
 import { RestSampleComponent } from './rest-sample/rest-sample.component';
 import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.component';
+import { NgxLoaderIndicatorComponent } from './ngx-loader-indicator/ngx-loader-indicator.component';
+import { CustomLoaderComponent } from './custom-loader/custom-loader.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -24,7 +26,9 @@ const routes: Routes = [
   { path: 'flex-layout', component: FlexlayoutComponent },
   { path: 'form-handling', component: FormHandlingComponent },
   { path: 'rest-sample', component: RestSampleComponent },
-  { path: 'rest-sample2', component: RestSampleTwoComponent }
+  { path: 'rest-sample2', component: RestSampleTwoComponent },
+  { path: 'ngx-loader', component: NgxLoaderIndicatorComponent },
+  { path: 'custom-loader', component: CustomLoaderComponent },
 ];
 
 @NgModule({

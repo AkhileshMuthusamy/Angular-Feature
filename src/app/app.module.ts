@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxLoaderIndicatorModule } from 'ngx-loader-indicator'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,9 @@ import { ResolveComponent } from './resolve/resolve.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { RestSampleComponent } from './rest-sample/rest-sample.component';
 import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.component';
+import { NgxLoaderIndicatorComponent } from './ngx-loader-indicator/ngx-loader-indicator.component';
+import { CustomLoaderComponent } from './custom-loader/custom-loader.component';
+import { LoaderDirective } from './directives/loader.directive';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -40,7 +44,10 @@ import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.compon
     HomeComponent,
     ResolveComponent,
     RestSampleComponent,
-    RestSampleTwoComponent
+    RestSampleTwoComponent,
+    NgxLoaderIndicatorComponent,
+    CustomLoaderComponent,
+    LoaderDirective
   ],
   imports: [
     NgxMaskModule.forRoot(),
@@ -49,7 +56,8 @@ import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.compon
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxLoaderIndicatorModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
