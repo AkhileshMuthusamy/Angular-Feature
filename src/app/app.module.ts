@@ -19,6 +19,9 @@ import { FlexlayoutComponent } from './flexLayout/flexlayout.component';
 import { FormHandlingComponent } from './form-handling/form-handling.component';
 import { HomeComponent } from './home/home.component';
 import { ResolveComponent } from './resolve/resolve.component';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { RestSampleComponent } from './rest-sample/rest-sample.component';
+import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -35,9 +38,12 @@ import { ResolveComponent } from './resolve/resolve.component';
     FlexlayoutComponent,
     FormHandlingComponent,
     HomeComponent,
-    ResolveComponent
+    ResolveComponent,
+    RestSampleComponent,
+    RestSampleTwoComponent
   ],
   imports: [
+    NgxMaskModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

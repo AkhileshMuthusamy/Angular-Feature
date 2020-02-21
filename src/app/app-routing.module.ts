@@ -10,6 +10,8 @@ import { FormHandlingComponent } from './form-handling/form-handling.component';
 import { HomeComponent } from './home/home.component';
 import { HnResolver } from './resolve/hn.resolver';
 import { ResolveComponent } from './resolve/resolve.component';
+import { RestSampleComponent } from './rest-sample/rest-sample.component';
+import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'htmltojspdf', component: HtmlToJspdfComponent },
   { path: 'generate-pdf', component: GeneratePdfComponent },
   { path: 'flex-layout', component: FlexlayoutComponent },
-  { path: 'form-handling', component: FormHandlingComponent }
+  { path: 'form-handling', component: FormHandlingComponent },
+  { path: 'rest-sample', component: RestSampleComponent },
+  { path: 'rest-sample2', component: RestSampleTwoComponent }
 ];
 
 @NgModule({
