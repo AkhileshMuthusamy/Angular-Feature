@@ -5,6 +5,21 @@ import { Directive, Input, ElementRef, Renderer2 } from '@angular/core';
 })
 export class LoaderDirective {
 
+  loaderStyles = {
+    'position': 'absolute',
+    'height': '100%',
+    'width': '100%',
+    'left': '0',
+    'right': '0',
+    'top': '0',
+    'bottom': '0',
+    'background': 'rgba(255, 255, 255, 0.8)',
+    'z-index': '50',
+    'display': 'flex',
+    'justify-content': 'center',
+    'align-items': 'center',
+  };
+
   public loaderEl: HTMLDivElement;
 
   @Input()
@@ -16,6 +31,7 @@ export class LoaderDirective {
     }
 
     this.loaderEl = this._renderer.createElement('div');
+    this._setStyles(this.loaderEl, this.loaderStyles);
     this._renderer.addClass(this.loaderEl, 'lds-ring');
     this._renderer.appendChild(this.loaderEl, this._renderer.createElement('div'));
     this._renderer.appendChild(this.loaderEl, this._renderer.createElement('div'));
@@ -28,6 +44,7 @@ export class LoaderDirective {
   constructor(private _el: ElementRef, private _renderer: Renderer2) { }
 
   private _setStyles(element: HTMLElement, styles: { [key: string]: string }): void {
+    console.log(styles);
     Object.keys(styles).forEach((key: any) => {
       this._renderer.setStyle(element, key, styles[key]);
     });
