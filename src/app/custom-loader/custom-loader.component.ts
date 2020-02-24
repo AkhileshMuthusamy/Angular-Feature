@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./custom-loader.component.css']
 })
 export class CustomLoaderComponent implements OnInit {
-
   isLoading = true;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  toggle() {
+    this.isLoading = !this.isLoading;
   }
-
 }

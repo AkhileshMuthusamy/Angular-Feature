@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { shareReplay, tap, map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RestService {
   dummyEmployee: Observable<any>;
+  dummySubcription: Subscription;
 
   private apiURL = 'http://dummy.restapiexample.com/api/v1/employees';
 
