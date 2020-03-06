@@ -1,0 +1,14 @@
+<p>ng-tree works!</p>
+<tree-root [nodes]="nodes" [options]="options"></tree-root>
+<context-menu #contextMenu>
+  <ng-template contextMenuItem (execute)="showMessage('Hi, ' + $event.item)">
+    Say hi!
+  </ng-template>
+  <ng-template contextMenuItem divider="true"></ng-template>
+  <ng-template contextMenuItem let-item (execute)="showMessage($event.item + ' said: ' + $event.item)">
+    Bye, {{item?.name}}
+  </ng-template>
+  <ng-template contextMenuItem passive="true">
+    Input something: <input type="text">
+  </ng-template>
+</context-menu>

@@ -14,6 +14,7 @@ import { RestSampleComponent } from './rest-sample/rest-sample.component';
 import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.component';
 import { NgxLoaderIndicatorComponent } from './ngx-loader-indicator/ngx-loader-indicator.component';
 import { CustomLoaderComponent } from './custom-loader/custom-loader.component';
+import { NgTreeComponent } from './ng-tree/ng-tree.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'rest-sample2', component: RestSampleTwoComponent },
   { path: 'ngx-loader', component: NgxLoaderIndicatorComponent },
   { path: 'custom-loader', component: CustomLoaderComponent },
+  { path: 'ng-tree', component: NgTreeComponent },
 ];
 
 @NgModule({

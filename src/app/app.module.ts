@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxLoaderIndicatorModule } from 'ngx-loader-indicator'
+import { ContextMenuModule } from 'ngx-contextmenu';
+import { TreeModule } from 'angular-tree-component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +28,7 @@ import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.compon
 import { NgxLoaderIndicatorComponent } from './ngx-loader-indicator/ngx-loader-indicator.component';
 import { CustomLoaderComponent } from './custom-loader/custom-loader.component';
 import { LoaderDirective } from './directives/loader.directive';
+import { NgTreeComponent } from './ng-tree/ng-tree.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -47,10 +50,13 @@ import { LoaderDirective } from './directives/loader.directive';
     RestSampleTwoComponent,
     NgxLoaderIndicatorComponent,
     CustomLoaderComponent,
-    LoaderDirective
+    LoaderDirective,
+    NgTreeComponent
   ],
   imports: [
     NgxMaskModule.forRoot(),
+    TreeModule.forRoot(),
+    ContextMenuModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
