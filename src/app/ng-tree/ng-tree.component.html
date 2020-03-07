@@ -1,5 +1,9 @@
-<p>ng-tree works!</p>
-<tree-root [nodes]="nodes" [options]="options"></tree-root>
+<p>Angular Tree with context menu</p>
+<tree-root [nodes]="nodes" [options]="options">
+  <ng-template #treeNodeTemplate let-node let-index="index">
+    <span [ngClass]="node.data.classes">{{ node.data.name }}</span>
+  </ng-template>
+</tree-root>
 <context-menu #contextMenu>
   <ng-template contextMenuItem (execute)="showMessage('Hi, ' + $event.item)">
     Say hi!

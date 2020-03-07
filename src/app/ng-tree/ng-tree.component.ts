@@ -13,8 +13,9 @@ export class NgTreeComponent implements OnInit {
 
   nodes = [
     {
-      id: 1,
+      id: 0,
       name: 'root1',
+      // classes: ['text-bold'],
       children: [
         { id: 2, name: 'child1' },
         { id: 3, name: 'child2' }
@@ -23,6 +24,7 @@ export class NgTreeComponent implements OnInit {
     {
       id: 4,
       name: 'root2',
+      classes: ['text-bold'],
       children: [
         { id: 5, name: 'child2.1' },
         {
@@ -33,6 +35,10 @@ export class NgTreeComponent implements OnInit {
           ]
         }
       ]
+    },
+    {
+      id: 8,
+      name: 'root3'
     }
   ];
   options: ITreeOptions = {
