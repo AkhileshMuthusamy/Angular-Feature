@@ -1,4 +1,4 @@
-<p>Angular Tree with context menu</p>
+<p [contextMenu]="basicMenu">Angular Tree with context menu</p>
 <tree-root [nodes]="nodes" [options]="options">
   <ng-template #treeNodeTemplate let-node let-index="index">
     <span [ngClass]="node.data.classes">{{ node.data.name }}</span>
@@ -14,5 +14,11 @@
   </ng-template>
   <ng-template contextMenuItem passive="true">
     Input something: <input type="text">
+  </ng-template>
+</context-menu>
+
+<context-menu #basicMenu>
+  <ng-template contextMenuItem>
+    Say...
   </ng-template>
 </context-menu>
