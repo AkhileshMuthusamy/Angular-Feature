@@ -15,6 +15,7 @@ import { RestSampleTwoComponent } from './rest-sample-two/rest-sample-two.compon
 import { NgxLoaderIndicatorComponent } from './ngx-loader-indicator/ngx-loader-indicator.component';
 import { CustomLoaderComponent } from './custom-loader/custom-loader.component';
 import { NgTreeComponent } from './ng-tree/ng-tree.component';
+import { AngularDatatableComponent } from './angular-datatable/angular-datatable.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'ngx-loader', component: NgxLoaderIndicatorComponent },
   { path: 'custom-loader', component: CustomLoaderComponent },
   { path: 'ng-tree', component: NgTreeComponent },
+  { path: 'datatable', component: AngularDatatableComponent },
 ];
 
 @NgModule({

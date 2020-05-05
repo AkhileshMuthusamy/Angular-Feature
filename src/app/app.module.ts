@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxLoaderIndicatorModule } from 'ngx-loader-indicator'
 import { ContextMenuModule } from 'ngx-contextmenu';
 import { TreeModule } from 'angular-tree-component';
+import { DataTablesModule } from 'angular-datatables';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { NgxLoaderIndicatorComponent } from './ngx-loader-indicator/ngx-loader-i
 import { CustomLoaderComponent } from './custom-loader/custom-loader.component';
 import { LoaderDirective } from './directives/loader.directive';
 import { NgTreeComponent } from './ng-tree/ng-tree.component';
+import { AngularDatatableComponent } from './angular-datatable/angular-datatable.component';
 // import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 @NgModule({
@@ -51,7 +53,8 @@ import { NgTreeComponent } from './ng-tree/ng-tree.component';
     NgxLoaderIndicatorComponent,
     CustomLoaderComponent,
     LoaderDirective,
-    NgTreeComponent
+    NgTreeComponent,
+    AngularDatatableComponent
   ],
   imports: [
     NgxMaskModule.forRoot(),
@@ -63,7 +66,8 @@ import { NgTreeComponent } from './ng-tree/ng-tree.component';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    NgxLoaderIndicatorModule.forRoot()
+    NgxLoaderIndicatorModule.forRoot(),
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

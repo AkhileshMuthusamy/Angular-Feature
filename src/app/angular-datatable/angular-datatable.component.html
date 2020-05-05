@@ -1,0 +1,19 @@
+<p> Not suitable for server-side pagination go with ngx-datatable</p>
+<button class="btn" (click)="loadTableData('2')">Load</button>
+<button class="btn" (click)="loadTableData('3')">Load</button>
+<table datatable [dtOptions]="dtOptions" class="row-border hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.id }}</td>
+      <td>{{ person.first_name }}</td>
+      <td>{{ person.last_name }}</td>
+    </tr>
+  </tbody>
+</table>
